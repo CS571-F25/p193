@@ -25,20 +25,20 @@ export default function Sidebar() {
           About
         </NavLink>
         <NavLink
+          to="/Research"
+          className={({ isActive }) =>
+            "nav-item" + (isActive ? " nav-item-active" : "")
+          }
+        >
+          Research
+        </NavLink>
+        <NavLink
           to="/Publications"
           className={({ isActive }) =>
             "nav-item" + (isActive ? " nav-item-active" : "")
           }
         >
           Publications
-        </NavLink>
-        <NavLink
-          to="/Hobbies"
-          className={({ isActive }) =>
-            "nav-item" + (isActive ? " nav-item-active" : "")
-          }
-        >
-          Hobbies
         </NavLink>
         <NavLink
           to="/Contact"
